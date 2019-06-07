@@ -1,8 +1,8 @@
 import React from 'react';
 import SampleContext from '../../context/SampleContext'
-import ProductListUseState from '../ProductListUseState'
-import ProductListUseEffect from '../ProductListUseEffect'
-import SampleConsumer from '../SampleConsumerComponent'
+import ProductListUseState from '../../components/ProductListUseState'
+import ProductListUseEffect from '../../components/ProductListUseEffect'
+import SampleConsumer from '../../components/SampleConsumerComponent'
 
 function App() {
   return (
