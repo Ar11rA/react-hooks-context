@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import SampleContext from '../Context/SampleContext'
+import SampleContext from '../../context/SampleContext'
 
 const SampleConsumer = () => { 
   const sampleData = useContext(SampleContext)

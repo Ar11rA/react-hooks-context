@@ -1,5 +1,5 @@
 import React from 'react';
-import SampleContext from '../Context/SampleContext'
+import SampleContext from '../../context/SampleContext'
 import ProductListUseState from '../ProductListUseState'
 import ProductListUseEffect from '../ProductListUseEffect'
 import SampleConsumer from '../SampleConsumerComponent'
