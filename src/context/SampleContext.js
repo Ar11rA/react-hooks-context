@@ -1,5 +1,5 @@
-import React from 'react'
+import React from 'react';
 
-const SampleContext = React.createContext(null)
+const SampleContext = React.createContext(null);
 
-export default SampleContext
+export default SampleContext;
