@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 
-const products = [
+const mockProducts = [
   { id: 1, name: 'Fortnite' },
   { id: 2, name: 'Doom' },
 ];
 
 const api = {
-  getProducts: () => Promise.resolve(products),
+  getProducts: () => Promise.resolve(mockProducts),
   getProduct: id => Promise.resolve(
-    products.find(p => p.id === id),
+    mockProducts.find(p => p.id === id),
   ),
 };
 
@@ -19,8 +19,8 @@ const ProductList = () => {
   const prodIds = [1, 2];
 
   async function fetchData() {
-    const products = await api.getProducts();
-    setProducts(products);
+    const fetchedProducts = await api.getProducts();
+    setProducts(fetchedProducts);
   }
 
   async function fetchProduct(productId) {
@@ -29,7 +29,6 @@ const ProductList = () => {
   }
 
   useEffect(() => {
-    console.log(`use effect ${selected}`);
     fetchData();
     fetchProduct(selected);
   }, [selected]);
@@ -42,7 +41,7 @@ const ProductList = () => {
       <h3>Selected product</h3>
       {' '}
       {product}
-      <button onClick={() => setSelected(prodIds[Math.floor(Math.random() * prodIds.length)])}>Change selected</button>
+      <button type="button" onClick={() => setSelected(prodIds[Math.floor(Math.random() * prodIds.length)])}>Change selected</button>
     </div>
   );
 };
