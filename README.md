@@ -9,3 +9,4 @@
 2. useEffect
 3. Context API and useContext
 4. fragment
+5. useReducer
