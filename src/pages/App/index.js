@@ -5,6 +5,7 @@ import ProductListUseEffect from '../../components/ProductListUseEffect';
 import SampleConsumer from '../../components/SampleConsumerComponent';
 import CounterUseState from '../../components/CounterUseState';
 import CounterUseReducer from '../../components/CounterUseReducer';
+import SampleUseGet from '../../components/SampleUseGet';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       </SampleContext.Provider>
       <CounterUseState />
       <CounterUseReducer />
+      <SampleUseGet />
     </Fragment>
   );
 }
