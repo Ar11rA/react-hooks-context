@@ -15,3 +15,37 @@
 ## How to run?
 
 Git clone and `npm i` and `npm start`
+
+## Folder structure
+
+```src
+├── actions
+│   ├── creator.js
+│   └── index.js
+├── components
+│   ├── CounterUseReducer
+│   │   └── index.js
+│   ├── CounterUseState
+│   │   └── index.js
+│   ├── ProductListUseEffect
+│   │   └── index.js
+│   ├── ProductListUseState
+│   │   └── index.js
+│   ├── SampleConsumerComponent
+│   │   └── index.js
+│   └── SampleUseGet
+│       └── index.js
+├── constants
+│   └── api.js
+├── context
+│   └── SampleContext.js
+├── hooks
+│   └── useGet.js
+├── index.js
+├── pages
+│   └── App
+│       └── index.js
+├── reducers
+│   └── counterReducer.js
+└── serviceWorker.js
+```
